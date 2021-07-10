@@ -310,6 +310,90 @@ section {
 	color: white;
 	transform: rotate(360deg);
 }
+
+.hand-wash .column {
+	display: flex;
+	justify-content: center;
+}
+
+.hand-wash .column .main-image img {
+	width: 25vw;
+}
+
+.hand-wash .column .box-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.hand-wash .column .box-container .box {
+	text-align: center;
+	margin: 2rem;
+}
+.hand-wash .column .box-container .box img {
+	width: 17rem;
+	height: 17rem;
+	padding: 1rem;
+}
+
+.hand-wash .column .box-container .box h3 {
+	font-size: 1.5rem;
+	color: var(--blue);
+	font-weight: 300;
+}
+
+footer {
+	background: url(images/background-img.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+footer .box-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer .box-container .box {
+	flex: 1 1 25rem;
+	margin: 2rem;
+}
+
+footer .box-container .box h3 {
+	font-size: 2rem;
+	color: var(--blue);
+	padding: 1rem 0;
+}
+footer .box-container .box p {
+	font-size: 1.3rem;
+	color: var(--dark-blue);
+	padding: 0.5rem 0;
+}
+
+footer .box-container .box a {
+	font-size: 1.5rem;
+	color: var(--dark-blue);
+	padding: 0.5rem 0;
+	display: block;
+}
+
+footer .box-container .box a:hover {
+	text-decoration: underline;
+}
+footer .credit {
+	font-size: 1.2rem;
+	color: grey;
+	text-align: center;
+	font-weight: normal;
+	border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+	padding: 2.5rem 1rem;
+}
+
+footer .credit a {
+	color: var(--blue);
+}
+
 /*Madia Query*/
 
 @media (max-width: 1200px) {
@@ -352,6 +436,9 @@ section {
 		transform: rotate(180deg);
 	}
 	.symptoms .column .main-image {
+		display: none;
+	}
+	.hand-wash .column .main-image img {
 		display: none;
 	}
 }
