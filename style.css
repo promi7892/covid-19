@@ -394,6 +394,27 @@ footer .credit a {
 	color: var(--blue);
 }
 
+.scroll-top {
+	position: fixed;
+	bottom: 7.5rem;
+	right: 1.5rem;
+	z-index: 1000;
+}
+
+.scroll-top img {
+	width: 8rem;
+	animation: float 2s linear infinite;
+}
+
+@keyframes float {
+	100%,
+	0% {
+		transform: translateY(0rem);
+	}
+	50% {
+		transform: translateY(-2rem);
+	}
+}
 /*Madia Query*/
 
 @media (max-width: 1200px) {
