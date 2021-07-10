@@ -246,6 +246,70 @@ section {
 	font-weight: 300;
 }
 
+.doctor {
+	background: url(images/background-img.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.doctor .box-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.doctor .box-container .box {
+	border-radius: 10px;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	text-align: center;
+	background: white;
+	border: 0.1rem solid rgba(0, 0, 0, 0.1);
+	width: 33rem;
+	margin: 1rem;
+}
+
+.doctor .box-container .box img {
+	padding: 1rem;
+	border-radius: 50%;
+	height: 20rem;
+	width: 20rem;
+	object-fit: cover;
+	background: var(--blue);
+}
+
+.doctor .box-container .box h2 {
+	font-size: 2rem;
+	color: var(--blue);
+}
+
+.doctor .box-container .box span {
+	font-size: 1.5rem;
+	color: var(--dark-blue);
+}
+
+.doctor .box-container .box .share {
+	border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	margin-top: 1rem;
+}
+.doctor .box-container .box .share a {
+	border-radius: 50%;
+	height: 4.5rem;
+	width: 4.5rem;
+	font-size: 2rem;
+	line-height: 4.5rem;
+	color: var(--blue);
+	background: rgb(223, 222, 222);
+}
+
+.doctor .box-container .box .share a:hover {
+	background: var(--blue);
+	color: white;
+	transform: rotate(360deg);
+}
 /*Madia Query*/
 
 @media (max-width: 1200px) {
@@ -323,5 +387,9 @@ section {
 	.precautions .column .box-container .box {
 		flex-flow: column;
 		text-align: center;
+	}
+
+	.doctor .box-container .box {
+		width: 100%;
 	}
 }
